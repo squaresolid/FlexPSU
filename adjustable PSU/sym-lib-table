@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name adjustable_PSU-eagle-import)(type Legacy)(uri ${KIPRJMOD}/adjustable_PSU-eagle-import.lib)(options "")(descr ""))
+)

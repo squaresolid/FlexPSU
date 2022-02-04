@@ -1,0 +1,1110 @@
+EESchema Schematic File Version 4
+LIBS:adjustable PSU-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	800  2150 1000 2150
+Wire Wire Line
+	1000 2150 1000 1950
+Wire Wire Line
+	2900 2450 2900 850 
+Wire Wire Line
+	2900 850  3250 850 
+Wire Wire Line
+	3700 850  3900 850 
+Wire Wire Line
+	3250 1050 3250 850 
+Wire Wire Line
+	3700 850  3700 350 
+Wire Wire Line
+	3700 350  4200 350 
+Connection ~ 3700 850 
+Wire Wire Line
+	3700 3450 3900 3450
+Wire Wire Line
+	2900 3450 2900 3650
+Wire Wire Line
+	4200 2950 3700 2950
+Wire Wire Line
+	3700 2950 3700 3450
+Connection ~ 3700 3450
+Wire Wire Line
+	3400 2950 3400 3050
+Text Label 2400 2950 0    10   ~ 0
+GND
+Wire Wire Line
+	2900 3950 2900 4050
+Text Label 2900 3950 0    10   ~ 0
+GND
+Wire Wire Line
+	3250 1450 3250 1350
+Text Label 3250 1450 0    10   ~ 0
+GND
+Wire Wire Line
+	5900 3950 5600 3950
+Wire Wire Line
+	5600 3950 5600 3850
+Wire Wire Line
+	5600 3950 5600 4450
+Connection ~ 5600 3950
+Text Label 5900 3950 0    10   ~ 0
+GND
+Wire Wire Line
+	5600 1350 5600 1250
+Wire Wire Line
+	5900 1350 5600 1350
+Wire Wire Line
+	5600 1850 5600 1350
+Connection ~ 5600 1350
+Text Label 5600 1350 0    10   ~ 0
+GND
+Wire Wire Line
+	4300 4550 4300 4650
+Wire Wire Line
+	4300 4650 4500 4650
+Wire Wire Line
+	4500 4650 4500 4850
+Wire Wire Line
+	5300 3950 5300 4050
+Wire Wire Line
+	5300 4050 5300 4150
+Wire Wire Line
+	4900 3950 4900 4050
+Wire Wire Line
+	4900 4050 4300 4050
+Wire Wire Line
+	4300 4050 4300 3750
+Wire Wire Line
+	4300 4050 4300 4150
+Wire Wire Line
+	5300 4050 4900 4050
+Connection ~ 4300 4050
+Connection ~ 5300 4050
+Connection ~ 4900 4050
+Wire Wire Line
+	5300 1350 5300 1450
+Wire Wire Line
+	5300 1450 5300 1550
+Wire Wire Line
+	4900 1350 4900 1450
+Wire Wire Line
+	4900 1450 4300 1450
+Wire Wire Line
+	4300 1450 4300 1150
+Wire Wire Line
+	4300 1450 4300 1550
+Wire Wire Line
+	5300 1450 4900 1450
+Connection ~ 4300 1450
+Connection ~ 4900 1450
+Connection ~ 5300 1450
+Wire Wire Line
+	4500 2250 4500 2050
+Wire Wire Line
+	4500 2050 4300 2050
+Wire Wire Line
+	4300 2050 4300 1950
+Connection ~ 4300 2050
+Wire Wire Line
+	4900 350  4900 850 
+Wire Wire Line
+	4900 850  4900 1050
+Wire Wire Line
+	4700 850  4900 850 
+Wire Wire Line
+	4900 850  5300 850 
+Wire Wire Line
+	5300 850  5300 950 
+Wire Wire Line
+	5300 850  5600 850 
+Wire Wire Line
+	5600 850  5600 950 
+Wire Wire Line
+	5900 950  5900 850 
+Wire Wire Line
+	5900 850  5600 850 
+Connection ~ 4900 850 
+Connection ~ 5300 850 
+Connection ~ 5600 850 
+Text Label 4500 350  0    10   ~ 0
++12V
+Wire Wire Line
+	4700 3450 4900 3450
+Wire Wire Line
+	4900 3450 4900 3650
+Wire Wire Line
+	4500 2950 4900 2950
+Wire Wire Line
+	4900 2950 4900 3450
+Wire Wire Line
+	4900 3450 5300 3450
+Wire Wire Line
+	5300 3450 5300 3550
+Wire Wire Line
+	5300 3450 5600 3450
+Wire Wire Line
+	5600 3450 5600 3550
+Wire Wire Line
+	5600 3450 5900 3450
+Wire Wire Line
+	5900 3450 5900 3550
+Connection ~ 4900 3450
+Connection ~ 5300 3450
+Connection ~ 5600 3450
+Connection ~ 5900 3450
+Text Label 4700 3450 0    10   ~ 0
+-12V
+$Comp
+L adjustable_PSU-eagle-import:GND #GND01
+U 1 0 BD537C42A7315E89
+P 3400 3150
+F 0 "#GND01" H 3400 3150 50  0001 C CNN
+F 1 "GND" H 3300 3050 59  0000 L BNN
+F 2 "" H 3400 3150 50  0001 C CNN
+F 3 "" H 3400 3150 50  0001 C CNN
+	1    3400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:337T U2
+U 1 0 9BC2674FE7066999
+P 4300 3450
+F 0 "U2" H 4000 3250 59  0000 L BNN
+F 1 "LM337" H 4000 3150 59  0000 L BNN
+F 2 "custom-footprints:TRANSISTOR_POWER_TO220-ADJ" H 4300 3450 50  0001 C CNN
+F 3 "" H 4300 3450 50  0001 C CNN
+	1    4300 3450
+	1    0    0    1   
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:317T U1
+U 1 0 EE748AAA2874CCE9
+P 4300 950
+F 0 "U1" H 4000 1275 59  0000 L BNN
+F 1 "LM317" H 4000 1175 59  0000 L BNN
+F 2 "custom-footprints:TRANSISTOR_POWER_TO220-ADJ" H 4300 950 50  0001 C CNN
+F 3 "" H 4300 950 50  0001 C CNN
+	1    4300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:050-EU2 C5
+U 1 0 9ACFE1C20B6A25E0
+P 3250 1250
+F 0 "C5" H 3310 1365 59  0000 L BNN
+F 1 "470u" H 3310 1165 59  0000 L BNN
+F 2 "custom-footprints:C_Radial_D8.0mm_H7.0mm_P3.50mm" H 3250 1250 50  0001 C CNN
+F 3 "" H 3250 1250 50  0001 C CNN
+	1    3250 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:050-EU2 C6
+U 1 0 CF00BDCE9ADA4274
+P 2900 3850
+F 0 "C6" H 2960 3965 59  0000 L BNN
+F 1 "470u" H 2960 3765 59  0000 L BNN
+F 2 "custom-footprints:C_Radial_D8.0mm_H7.0mm_P3.50mm" H 2900 3850 50  0001 C CNN
+F 3 "" H 2900 3850 50  0001 C CNN
+	1    2900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND02
+U 1 0 AB5AB1D6C92C8F3B
+P 3250 1550
+F 0 "#GND02" H 3250 1550 50  0001 C CNN
+F 1 "GND" H 3150 1450 59  0000 L BNN
+F 2 "" H 3250 1550 50  0001 C CNN
+F 3 "" H 3250 1550 50  0001 C CNN
+	1    3250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND03
+U 1 0 3178D5F9E2B99DEF
+P 2900 4150
+F 0 "#GND03" H 2900 4150 50  0001 C CNN
+F 1 "GND" H 2800 4050 59  0000 L BNN
+F 2 "" H 2900 4150 50  0001 C CNN
+F 3 "" H 2900 4150 50  0001 C CNN
+	1    2900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:R-EU_0204_7 R1
+U 1 0 B82084C643F53746
+P 4300 1750
+F 0 "R1" H 4150 1809 59  0000 L BNN
+F 1 "1K" H 4150 1620 59  0000 L BNN
+F 2 "custom-footprints:R_AXIAL_0.5W" H 4300 1750 50  0001 C CNN
+F 3 "" H 4300 1750 50  0001 C CNN
+	1    4300 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:R-EU_0204_7 R2
+U 1 0 77FFD22EDE6637A0
+P 4300 4350
+F 0 "R2" H 4150 4409 59  0000 L BNN
+F 1 "1K" H 4150 4220 59  0000 L BNN
+F 2 "custom-footprints:R_AXIAL_0.5W" H 4300 4350 50  0001 C CNN
+F 3 "" H 4300 4350 50  0001 C CNN
+	1    4300 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND04
+U 1 0 382A82296AE2E73F
+P 4300 2550
+F 0 "#GND04" H 4300 2550 50  0001 C CNN
+F 1 "GND" H 4200 2450 59  0000 L BNN
+F 2 "" H 4300 2550 50  0001 C CNN
+F 3 "" H 4300 2550 50  0001 C CNN
+	1    4300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND05
+U 1 0 DAC017DF6CC61BFB
+P 4300 5150
+F 0 "#GND05" H 4300 5150 50  0001 C CNN
+F 1 "GND" H 4200 5050 59  0000 L BNN
+F 2 "" H 4300 5150 50  0001 C CNN
+F 3 "" H 4300 5150 50  0001 C CNN
+	1    4300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:R-TRIMMT93YA R3
+U 1 0 A63BC439823F9E4E
+P 4300 2250
+F 0 "R3" H 4150 2350 59  0000 R TNN
+F 1 "2K" H 4150 2250 59  0000 R TNN
+F 2 "custom-footprints:R-TRIMPOT64W" H 4300 2250 50  0001 C CNN
+F 3 "" H 4300 2250 50  0001 C CNN
+	1    4300 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:R-EU_0204_7 R5
+U 1 0 5216B1DC6DA924DB
+P 5300 1150
+F 0 "R5" V 5391 1200 59  0000 L BNN
+F 1 "240R" V 5300 1190 59  0000 L BNN
+F 2 "custom-footprints:R_AXIAL_0.5W" H 5300 1150 50  0001 C CNN
+F 3 "" H 5300 1150 50  0001 C CNN
+	1    5300 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:R-EU_0204_7 R6
+U 1 0 50B4F2EE81102954
+P 5300 3750
+F 0 "R6" V 5391 3800 59  0000 L BNN
+F 1 "240R" V 5300 3800 59  0000 L BNN
+F 2 "custom-footprints:R_AXIAL_0.5W" H 5300 3750 50  0001 C CNN
+F 3 "" H 5300 3750 50  0001 C CNN
+	1    5300 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:063-EU C9
+U 1 0 CEFF3C36C1619552
+P 5300 1750
+F 0 "C9" H 5160 1875 59  0000 R TNN
+F 1 "10u" H 5160 1785 59  0000 R TNN
+F 2 "adjustable PSU:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 5300 1750 50  0001 C CNN
+F 3 "" H 5300 1750 50  0001 C CNN
+	1    5300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:063-EU C10
+U 1 0 CB9610727F465135
+P 5300 4350
+F 0 "C10" H 5360 4465 59  0000 L BNN
+F 1 "10u" H 5360 4265 59  0000 L BNN
+F 2 "adjustable PSU:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 5300 4350 50  0001 C CNN
+F 3 "" H 5300 4350 50  0001 C CNN
+	1    5300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:050-EU1 C7
+U 1 0 A2A2822EE6669AE6
+P 5600 1150
+F 0 "C7" H 5500 1235 59  0000 R TNN
+F 1 "1u" H 5500 1145 59  0000 R TNN
+F 2 "adjustable PSU:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 5600 1150 50  0001 C CNN
+F 3 "" H 5600 1150 50  0001 C CNN
+	1    5600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:050-EU2 C8
+U 1 0 87EA848B5848FE1E
+P 5600 3750
+F 0 "C8" H 5400 3900 59  0000 L BNN
+F 1 "1u" H 5400 3700 59  0000 L BNN
+F 2 "adjustable PSU:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 5600 3750 50  0001 C CNN
+F 3 "" H 5600 3750 50  0001 C CNN
+	1    5600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND06
+U 1 0 217C813E6DBAC010
+P 5300 1950
+F 0 "#GND06" H 5300 1950 50  0001 C CNN
+F 1 "GND" H 5200 1850 59  0000 L BNN
+F 2 "" H 5300 1950 50  0001 C CNN
+F 3 "" H 5300 1950 50  0001 C CNN
+	1    5300 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND09
+U 1 0 D0B7135E158B4DC7
+P 5300 4550
+F 0 "#GND09" H 5300 4550 50  0001 C CNN
+F 1 "GND" H 5200 4450 59  0000 L BNN
+F 2 "" H 5300 4550 50  0001 C CNN
+F 3 "" H 5300 4550 50  0001 C CNN
+	1    5300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND07
+U 1 0 34945832E923FEC
+P 5600 1950
+F 0 "#GND07" H 5600 1950 50  0001 C CNN
+F 1 "GND" H 5500 1850 59  0000 L BNN
+F 2 "" H 5600 1950 50  0001 C CNN
+F 3 "" H 5600 1950 50  0001 C CNN
+	1    5600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND08
+U 1 0 980D51DDD5805D3F
+P 5600 4550
+F 0 "#GND08" H 5600 4550 50  0001 C CNN
+F 1 "GND" H 5500 4450 59  0000 L BNN
+F 2 "" H 5600 4550 50  0001 C CNN
+F 3 "" H 5600 4550 50  0001 C CNN
+	1    5600 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:R-EU_0204_7 R7
+U 1 0 929E6F025609ACB3
+P 5900 1150
+F 0 "R7" V 5981 1200 59  0000 L BNN
+F 1 "4.7K" V 5890 1200 59  0000 L BNN
+F 2 "custom-footprints:R_AXIAL_0.5W" H 5900 1150 50  0001 C CNN
+F 3 "" H 5900 1150 50  0001 C CNN
+	1    5900 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:R-EU_0207_10 R8
+U 1 0 515396650EB1C79C
+P 5900 3750
+F 0 "R8" V 6000 3550 59  0000 L BNN
+F 1 "4.7K" V 5900 3500 59  0000 L BNN
+F 2 "custom-footprints:R_AXIAL_0.5W" H 5900 3750 50  0001 C CNN
+F 3 "" H 5900 3750 50  0001 C CNN
+	1    5900 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:22-23-2031 X2
+U 1 0 655E1A2F4D5CB0BE
+P 700 2150
+F 0 "X2" H 800 2120 51  0000 L BNN
+F 1 "22-23-2031" H 670 2205 59  0001 L BNN
+F 2 "SF Connectors:SCREWTERMINAL-3.5MM-3" H 700 2150 50  0001 C CNN
+F 3 "" H 700 2150 50  0001 C CNN
+	1    700  2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:22-23-2031 X2
+U 2 0 655E1A2F4D5CB0B2
+P 700 2950
+F 0 "X2" H 800 2920 51  0000 L BNN
+F 1 "22-23-2031" H 670 3005 59  0001 L BNN
+F 2 "SF Connectors:SCREWTERMINAL-3.5MM-3" H 700 2950 50  0001 C CNN
+F 3 "" H 700 2950 50  0001 C CNN
+	2    700  2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:22-23-2031 X2
+U 3 0 655E1A2F4D5CB0B6
+P 700 2550
+F 0 "X2" H 800 2520 51  0000 L BNN
+F 1 "22-23-2031" H 670 2605 59  0001 L BNN
+F 2 "SF Connectors:SCREWTERMINAL-3.5MM-3" H 700 2550 50  0001 C CNN
+F 3 "" H 700 2550 50  0001 C CNN
+	3    700  2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 350  4900 350 
+$Comp
+L Diode:1N4007 D2
+U 1 1 61EECAFB
+P 4900 1200
+F 0 "D2" V 4854 1279 50  0000 L CNN
+F 1 "1N4007" V 4945 1279 50  0000 L CNN
+F 2 "custom-footprints:DIODE-1N400X" H 4900 1025 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4900 1200 50  0001 C CNN
+	1    4900 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4007 D3
+U 1 1 61EECD22
+P 4350 2950
+F 0 "D3" H 4350 3166 50  0000 C CNN
+F 1 "1N4007" H 4350 3075 50  0000 C CNN
+F 2 "custom-footprints:DIODE-1N400X" H 4350 2775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4350 2950 50  0001 C CNN
+	1    4350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D4
+U 1 1 61EECF9C
+P 4900 3800
+F 0 "D4" V 4850 3600 50  0000 L CNN
+F 1 "1N4007" V 4950 3450 50  0000 L CNN
+F 2 "custom-footprints:DIODE-1N400X" H 4900 3625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4900 3800 50  0001 C CNN
+	1    4900 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4007 D1
+U 1 1 61F044EB
+P 4350 350
+F 0 "D1" H 4350 566 50  0000 C CNN
+F 1 "1N4007" H 4350 475 50  0000 C CNN
+F 2 "custom-footprints:DIODE-1N400X" H 4350 175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4350 350 50  0001 C CNN
+	1    4350 350 
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Diodes-Bridge-Rectifiers:KBP04G DR1
+U 1 1 61F4B5ED
+P 1700 2450
+F 0 "DR1" H 1900 2250 60  0000 L CNN
+F 1 "KBP04G" H 1800 2150 60  0000 L CNN
+F 2 "digikey-footprints:SIP-4_W3.81mm" H 1900 2650 60  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds21203.pdf" H 1900 2750 60  0001 L CNN
+F 4 "KBP04G-ND" H 1900 2850 60  0001 L CNN "Digi-Key_PN"
+F 5 "KBP04G" H 1900 2950 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 1900 3050 60  0001 L CNN "Category"
+F 7 "Diodes - Bridge Rectifiers" H 1900 3150 60  0001 L CNN "Family"
+F 8 "https://www.diodes.com/assets/Datasheets/ds21203.pdf" H 1900 3250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/diodes-incorporated/KBP04G/KBP04G-ND/248716" H 1900 3350 60  0001 L CNN "DK_Detail_Page"
+F 10 "BRIDGE RECT 1PHASE 400V 1.5A KBP" H 1900 3450 60  0001 L CNN "Description"
+F 11 "Diodes Incorporated" H 1900 3550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1900 3650 60  0001 L CNN "Status"
+	1    1700 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1950 1700 2050
+Wire Wire Line
+	1000 1950 1700 1950
+Wire Wire Line
+	1300 2450 1200 2450
+Wire Wire Line
+	1200 2450 1200 3450
+Connection ~ 2900 2450
+Wire Wire Line
+	2900 2450 2900 2550
+Wire Wire Line
+	2900 2950 3400 2950
+Connection ~ 2900 2950
+Wire Wire Line
+	2900 2850 2900 2950
+Wire Wire Line
+	2900 2950 2900 3050
+Wire Wire Line
+	2900 3450 3700 3450
+Connection ~ 2900 3450
+Wire Wire Line
+	2900 3450 2900 3350
+Wire Wire Line
+	1200 3450 2400 3450
+Wire Wire Line
+	2400 3450 2900 3450
+Connection ~ 2400 3450
+Wire Wire Line
+	2400 3450 2400 3350
+Wire Wire Line
+	2400 2950 2900 2950
+Connection ~ 2400 2950
+Wire Wire Line
+	2400 2950 2400 3050
+Wire Wire Line
+	2400 2850 2400 2950
+Wire Wire Line
+	2100 2450 2400 2450
+Wire Wire Line
+	2400 2450 2900 2450
+Connection ~ 2400 2450
+Wire Wire Line
+	2400 2450 2400 2550
+Text Label 800  2950 0    50   ~ 0
+GND
+Text Label 800  2150 0    50   ~ 0
++12VAC
+Text Label 800  2550 0    50   ~ 0
+-12VAC
+Wire Wire Line
+	800  2950 2400 2950
+Wire Wire Line
+	800  2550 1000 2550
+Wire Wire Line
+	1000 2550 1000 2850
+Wire Wire Line
+	1000 2850 1700 2850
+Wire Wire Line
+	5900 3450 6400 3450
+Text Label 2100 2450 0    50   ~ 0
++12VDC
+Text Label 1200 3450 0    50   ~ 0
+-12VDC
+$Comp
+L adjustable_PSU-eagle-import:050-EU2 C1
+U 1 0 61FB1229
+P 2400 2750
+F 0 "C1" H 2460 2865 59  0000 L BNN
+F 1 "4700u" H 2460 2665 59  0000 L BNN
+F 2 "custom-footprints:C_POL-RADIAL-15MM" H 2400 2750 50  0001 C CNN
+F 3 "" H 2400 2750 50  0001 C CNN
+	1    2400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:050-EU2 C2
+U 1 0 61FB13AA
+P 2900 2750
+F 0 "C2" H 2960 2865 59  0000 L BNN
+F 1 "4700u" H 2960 2665 59  0000 L BNN
+F 2 "custom-footprints:C_POL-RADIAL-15MM" H 2900 2750 50  0001 C CNN
+F 3 "" H 2900 2750 50  0001 C CNN
+	1    2900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:050-EU2 C3
+U 1 0 61FB13FF
+P 2400 3250
+F 0 "C3" H 2460 3365 59  0000 L BNN
+F 1 "4700u" H 2460 3165 59  0000 L BNN
+F 2 "custom-footprints:C_POL-RADIAL-15MM" H 2400 3250 50  0001 C CNN
+F 3 "" H 2400 3250 50  0001 C CNN
+	1    2400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:050-EU2 C4
+U 1 0 61FB145C
+P 2900 3250
+F 0 "C4" H 2960 3365 59  0000 L BNN
+F 1 "4700u" H 2960 3165 59  0000 L BNN
+F 2 "custom-footprints:C_POL-RADIAL-15MM" H 2900 3250 50  0001 C CNN
+F 3 "" H 2900 3250 50  0001 C CNN
+	1    2900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:R-TRIMMT93YA R4
+U 1 0 61F9115C
+P 4300 4850
+F 0 "R4" H 4150 4950 59  0000 R TNN
+F 1 "2K" H 4150 4850 59  0000 R TNN
+F 2 "custom-footprints:R-TRIMPOT64W" H 4300 4850 50  0001 C CNN
+F 3 "" H 4300 4850 50  0001 C CNN
+	1    4300 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 4650
+Wire Wire Line
+	8950 4250 8950 4150
+Wire Wire Line
+	8950 4250 8950 4350
+Connection ~ 8950 4250
+Wire Wire Line
+	9850 4150 9850 4250
+Wire Wire Line
+	9850 4250 9850 4350
+Connection ~ 9850 4250
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0101
+U 1 0 61FA58DF
+P 10450 4400
+F 0 "#GND0101" H 10450 4400 50  0001 C CNN
+F 1 "GND" H 10350 4300 59  0000 L BNN
+F 2 "" H 10450 4400 50  0001 C CNN
+F 3 "" H 10450 4400 50  0001 C CNN
+	1    10450 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0102
+U 1 0 61FB00E7
+P 8250 4400
+F 0 "#GND0102" H 8250 4400 50  0001 C CNN
+F 1 "GND" H 8150 4300 59  0000 L BNN
+F 2 "" H 8250 4400 50  0001 C CNN
+F 3 "" H 8250 4400 50  0001 C CNN
+	1    8250 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 6400 3450 2    50   Input ~ 0
+-12Vor-15V
+Text GLabel 9850 4050 2    50   Input ~ 0
+-12Vor-15V
+Text GLabel 8950 4050 0    50   Input ~ 0
+-12Vor-15V
+Text GLabel 6050 850  2    50   Input ~ 0
++12Vor+15V
+Text GLabel 9850 4450 2    50   Input ~ 0
++12Vor+15V
+Text GLabel 8950 4450 0    50   Input ~ 0
++12Vor+15V
+Connection ~ 3250 850 
+Wire Wire Line
+	3250 850  3700 850 
+Wire Wire Line
+	3700 1050 3700 850 
+Wire Wire Line
+	3700 1450 3700 1350
+Text Label 3700 1450 0    10   ~ 0
+GND
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0103
+U 1 0 61FBEE59
+P 3700 1550
+F 0 "#GND0103" H 3700 1550 50  0001 C CNN
+F 1 "GND" H 3600 1450 59  0000 L BNN
+F 2 "" H 3700 1550 50  0001 C CNN
+F 3 "" H 3700 1550 50  0001 C CNN
+	1    3700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:050-EU2 C11
+U 1 0 61FC888A
+P 3700 1250
+F 0 "C11" H 3760 1365 59  0000 L BNN
+F 1 ".1u" H 3760 1165 59  0000 L BNN
+F 2 "custom-footprints:CAP-PTH-5MM" H 3700 1250 50  0001 C CNN
+F 3 "" H 3700 1250 50  0001 C CNN
+	1    3700 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3650 3700 3450
+Wire Wire Line
+	3700 4050 3700 3950
+Text Label 3700 4050 0    10   ~ 0
+GND
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0104
+U 1 0 61FCB98A
+P 3700 4150
+F 0 "#GND0104" H 3700 4150 50  0001 C CNN
+F 1 "GND" H 3600 4050 59  0000 L BNN
+F 2 "" H 3700 4150 50  0001 C CNN
+F 3 "" H 3700 4150 50  0001 C CNN
+	1    3700 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:050-EU2 C12
+U 1 0 61FCB990
+P 3700 3850
+F 0 "C12" H 3760 3965 59  0000 L BNN
+F 1 ".1u" H 3760 3765 59  0000 L BNN
+F 2 "custom-footprints:CAP-PTH-5MM" H 3700 3850 50  0001 C CNN
+F 3 "" H 3700 3850 50  0001 C CNN
+	1    3700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L eurocad:LM7805 U3
+U 1 1 61FD2090
+P 8100 900
+F 0 "U3" H 8100 1215 50  0000 C CNN
+F 1 "LM7809" H 8100 1124 50  0000 C CNN
+F 2 "custom-footprints:TO220-IGO" H 8100 1124 50  0001 C CNN
+F 3 "" H 8100 1124 50  0000 C CNN
+	1    8100 900 
+	1    0    0    -1  
+$EndComp
+Text GLabel 7450 850  0    50   Input ~ 0
++12Vor+15V
+$Comp
+L adjustable_PSU-eagle-import:050-EU2 C13
+U 1 0 61FD2305
+P 7600 1150
+F 0 "C13" H 7660 1265 59  0000 L BNN
+F 1 ".1u" H 7660 1065 59  0000 L BNN
+F 2 "custom-footprints:CAP-PTH-5MM" H 7600 1150 50  0001 C CNN
+F 3 "" H 7600 1150 50  0001 C CNN
+	1    7600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:050-EU1 C14
+U 1 0 61FD237D
+P 8600 1150
+F 0 "C14" H 8500 1235 59  0000 R TNN
+F 1 "1u" H 8500 1145 59  0000 R TNN
+F 2 "adjustable PSU:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 8600 1150 50  0001 C CNN
+F 3 "" H 8600 1150 50  0001 C CNN
+	1    8600 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1250 7600 1350
+Wire Wire Line
+	7600 1350 8100 1350
+Wire Wire Line
+	8600 1350 8600 1250
+Wire Wire Line
+	8100 1150 8100 1350
+Connection ~ 8100 1350
+Wire Wire Line
+	8100 1350 8600 1350
+Wire Wire Line
+	8500 850  8600 850 
+Wire Wire Line
+	8600 850  8600 950 
+Wire Wire Line
+	7700 850  7600 850 
+Wire Wire Line
+	7600 850  7600 950 
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0105
+U 1 0 61FDEDD6
+P 8100 1600
+F 0 "#GND0105" H 8100 1600 50  0001 C CNN
+F 1 "GND" H 8000 1500 59  0000 L BNN
+F 2 "" H 8100 1600 50  0001 C CNN
+F 3 "" H 8100 1600 50  0001 C CNN
+	1    8100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1350 8100 1500
+Wire Wire Line
+	7450 850  7600 850 
+Connection ~ 7600 850 
+Text GLabel 9000 850  2    50   Input ~ 0
++12Vor+9V
+Connection ~ 8600 850 
+$Comp
+L eurocad:EURO_PWR_2x8_IDC J1
+U 1 1 61FECB22
+P 9400 4400
+F 0 "J1" H 9400 5071 60  0000 C CNN
+F 1 "EURO_PWR_2x8_IDC" H 9400 4981 39  0000 C CNN
+F 2 "europi:IDC-2x8" H 9400 4890 60  0000 C CNN
+F 3 "" H 9400 4550 60  0000 C CNN
+	1    9400 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 9850 4550 2    50   Input ~ 0
++5V
+Text GLabel 8950 4550 0    50   Input ~ 0
++5V
+Wire Wire Line
+	5900 850  6050 850 
+Connection ~ 5900 850 
+Text Label 8950 3250 0    10   ~ 0
+GND
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0106
+U 1 0 62021389
+P 8950 3350
+F 0 "#GND0106" H 8950 3350 50  0001 C CNN
+F 1 "GND" H 8850 3250 59  0000 L BNN
+F 2 "" H 8950 3350 50  0001 C CNN
+F 3 "" H 8950 3350 50  0001 C CNN
+	1    8950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 6202138F
+P 8950 2550
+F 0 "D6" V 8988 2433 50  0000 R CNN
+F 1 "LED" V 8897 2433 50  0000 R CNN
+F 2 "SF LED:LED_3MM" H 8950 2550 50  0001 C CNN
+F 3 "~" H 8950 2550 50  0001 C CNN
+	1    8950 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L eurocad:LM7805 U4
+U 1 1 62021395
+P 8150 2400
+F 0 "U4" H 8150 2715 50  0000 C CNN
+F 1 "LM7805" H 8150 2624 50  0000 C CNN
+F 2 "custom-footprints:TO220-IGO" H 8150 2624 50  0001 C CNN
+F 3 "" H 8150 2624 50  0000 C CNN
+	1    8150 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 7500 2350 0    50   Input ~ 0
++12Vor+9V
+$Comp
+L adjustable_PSU-eagle-import:050-EU2 C15
+U 1 0 6202139C
+P 7650 2650
+F 0 "C15" H 7710 2765 59  0000 L BNN
+F 1 ".1u" H 7710 2565 59  0000 L BNN
+F 2 "custom-footprints:CAP-PTH-5MM" H 7650 2650 50  0001 C CNN
+F 3 "" H 7650 2650 50  0001 C CNN
+	1    7650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:050-EU1 C16
+U 1 0 620213A2
+P 8650 2650
+F 0 "C16" H 8550 2735 59  0000 R TNN
+F 1 "1u" H 8550 2645 59  0000 R TNN
+F 2 "adjustable PSU:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 8650 2650 50  0001 C CNN
+F 3 "" H 8650 2650 50  0001 C CNN
+	1    8650 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2750 7650 2850
+Wire Wire Line
+	7650 2850 8150 2850
+Wire Wire Line
+	8650 2850 8650 2750
+Wire Wire Line
+	8150 2650 8150 2850
+Connection ~ 8150 2850
+Wire Wire Line
+	8150 2850 8650 2850
+Wire Wire Line
+	8550 2350 8650 2350
+Wire Wire Line
+	8650 2350 8650 2450
+Wire Wire Line
+	7750 2350 7650 2350
+Wire Wire Line
+	7650 2350 7650 2450
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0107
+U 1 0 620213B2
+P 8150 3100
+F 0 "#GND0107" H 8150 3100 50  0001 C CNN
+F 1 "GND" H 8050 3000 59  0000 L BNN
+F 2 "" H 8150 3100 50  0001 C CNN
+F 3 "" H 8150 3100 50  0001 C CNN
+	1    8150 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2850 8150 3000
+Wire Wire Line
+	7500 2350 7650 2350
+Connection ~ 7650 2350
+Text GLabel 9050 2350 2    50   Input ~ 0
++5V
+Connection ~ 8650 2350
+Wire Wire Line
+	9050 2350 8950 2350
+Wire Wire Line
+	8650 2350 8950 2350
+Connection ~ 8950 2350
+Wire Wire Line
+	8950 2350 8950 2400
+$Comp
+L adjustable_PSU-eagle-import:R-EU_0204_7 R9
+U 1 0 FB1FF6BEE4781B31
+P 8950 2900
+F 0 "R9" V 9041 2950 59  0000 L BNN
+F 1 "1K" V 8950 2950 59  0000 L BNN
+F 2 "custom-footprints:R_AXIAL_0.25W" H 8950 2900 50  0001 C CNN
+F 3 "" H 8950 2900 50  0001 C CNN
+	1    8950 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8600 850  9000 850 
+Wire Wire Line
+	8950 3100 8950 3250
+Text Notes 5000 700  0    50   ~ 0
+adjust to +12V for eurorack, +15V for Buchla
+Wire Wire Line
+	8250 4250 8250 4300
+Wire Wire Line
+	8250 4250 8950 4250
+Wire Wire Line
+	10450 4250 10450 4300
+Wire Wire Line
+	9850 4250 10450 4250
+$Comp
+L SparkFun-Connectors:CONN_02 J2
+U 1 1 620575CA
+P 9350 5100
+F 0 "J2" H 9122 5055 45  0000 R CNN
+F 1 "CONN_02" H 9122 5139 45  0000 R CNN
+F 2 "SF Connectors:1X02" H 9350 5350 20  0001 C CNN
+F 3 "" H 9350 5100 50  0001 C CNN
+F 4 "XXX-00000" H 9122 5234 60  0000 R CNN "Field4"
+	1    9350 5100
+	-1   0    0    1   
+$EndComp
+Text GLabel 9250 5100 0    50   Input ~ 0
++12Vor+9V
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0108
+U 1 0 62057908
+P 9250 5300
+F 0 "#GND0108" H 9250 5300 50  0001 C CNN
+F 1 "GND" H 9150 5200 59  0000 L BNN
+F 2 "" H 9250 5300 50  0001 C CNN
+F 3 "" H 9250 5300 50  0001 C CNN
+	1    9250 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 62057DAB
+P 9950 1450
+F 0 "H2" H 10050 1501 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10050 1410 50  0000 L CNN
+F 2 "custom-footprints:MountingHolePad_M3" H 9950 1450 50  0001 C CNN
+F 3 "~" H 9950 1450 50  0001 C CNN
+	1    9950 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0109
+U 1 0 62058134
+P 9950 1650
+F 0 "#GND0109" H 9950 1650 50  0001 C CNN
+F 1 "GND" H 9850 1550 59  0000 L BNN
+F 2 "" H 9950 1650 50  0001 C CNN
+F 3 "" H 9950 1650 50  0001 C CNN
+	1    9950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6205FD5D
+P 9950 2000
+F 0 "H3" H 10050 2051 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10050 1960 50  0000 L CNN
+F 2 "custom-footprints:MountingHolePad_M3" H 9950 2000 50  0001 C CNN
+F 3 "~" H 9950 2000 50  0001 C CNN
+	1    9950 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0110
+U 1 0 6205FD64
+P 9950 2200
+F 0 "#GND0110" H 9950 2200 50  0001 C CNN
+F 1 "GND" H 9850 2100 59  0000 L BNN
+F 2 "" H 9950 2200 50  0001 C CNN
+F 3 "" H 9950 2200 50  0001 C CNN
+	1    9950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 62063B0A
+P 9950 2550
+F 0 "H4" H 10050 2601 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10050 2510 50  0000 L CNN
+F 2 "custom-footprints:MountingHolePad_M3" H 9950 2550 50  0001 C CNN
+F 3 "~" H 9950 2550 50  0001 C CNN
+	1    9950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0111
+U 1 0 62063B11
+P 9950 2750
+F 0 "#GND0111" H 9950 2750 50  0001 C CNN
+F 1 "GND" H 9850 2650 59  0000 L BNN
+F 2 "" H 9950 2750 50  0001 C CNN
+F 3 "" H 9950 2750 50  0001 C CNN
+	1    9950 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 620678CA
+P 9950 900
+F 0 "H1" H 10050 951 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10050 860 50  0000 L CNN
+F 2 "custom-footprints:MountingHolePad_M3" H 9950 900 50  0001 C CNN
+F 3 "~" H 9950 900 50  0001 C CNN
+	1    9950 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0112
+U 1 0 620678D1
+P 9950 1100
+F 0 "#GND0112" H 9950 1100 50  0001 C CNN
+F 1 "GND" H 9850 1000 59  0000 L BNN
+F 2 "" H 9950 1100 50  0001 C CNN
+F 3 "" H 9950 1100 50  0001 C CNN
+	1    9950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 6206CD15
+P 9950 3100
+F 0 "H5" H 10050 3151 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10050 3060 50  0000 L CNN
+F 2 "custom-footprints:MountingHolePad_M3" H 9950 3100 50  0001 C CNN
+F 3 "~" H 9950 3100 50  0001 C CNN
+	1    9950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L adjustable_PSU-eagle-import:GND #GND0113
+U 1 0 6206CD1C
+P 9950 3300
+F 0 "#GND0113" H 9950 3300 50  0001 C CNN
+F 1 "GND" H 9850 3200 59  0000 L BNN
+F 2 "" H 9950 3300 50  0001 C CNN
+F 3 "" H 9950 3300 50  0001 C CNN
+	1    9950 3300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
